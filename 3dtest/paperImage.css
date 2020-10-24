@@ -1,0 +1,49 @@
+.section {
+    height: 260px;
+    width: 100%;
+    background: #333;
+}
+.text {
+    font-size: 1.2em;
+    display: flex;
+    text-align: center;
+    color: white;
+    height: 100%;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.7s;
+    margin-left: 10%;
+}
+.section:hover > .text {
+    opacity: .9;
+}
+.fries {
+    margin-left: 15%;
+    perspective:3000px;
+    height: 280px;
+    width: 300px;
+    position: absolute;
+    padding-left: 300px;
+    top: 156px;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+}
+.fries :nth-child(1) {
+    transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
+    box-shadow: -80px 60px 15px 5px rgba(0,0,0,0.4);
+    transition: all .4s;
+    transform-style: preserve-3d;
+    max-height: 50vh;
+    position: absolute;
+    z-index: 0;
+  }
+  .section:hover > .fries :nth-child(1)  {
+    position: absolute;
+    transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
+    transform: translateX(120%);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+    margin-left: 80%;
+    z-index: 1000;
+}
