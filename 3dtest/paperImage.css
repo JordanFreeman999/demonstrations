@@ -4,6 +4,9 @@
     background: #333;
 }
 .text {
+    letter-spacing: 1px;
+    font-family: 'Titillium', 'Roboto Slab', sans-serif;
+    font-weight: bold;
     font-size: 1.2em;
     display: flex;
     text-align: center;
@@ -32,7 +35,7 @@
     transform-style: preserve-3d;
 }
 .fries :nth-child(1) {
-    transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
+    transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 60px);
     box-shadow: -80px 60px 15px 5px rgba(0,0,0,0.4);
     transition-delay: all 0.5s;
     transition: all .4s;
